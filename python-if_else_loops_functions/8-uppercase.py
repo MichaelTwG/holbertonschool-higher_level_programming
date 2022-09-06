@@ -6,6 +6,7 @@ def uppercase(str):
         print("{}".format(i), end='')
     print("")
 
+
 def islower(c):
     if ord(c) < 97:
         return False
