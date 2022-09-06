@@ -11,4 +11,4 @@ if last_num > 5:
 elif last_num == 0:
     print("and is 0")
 elif last_num < 6:
-    print("and is less than 6 and not 0)
+    print("and is less than 6 and not 0")
