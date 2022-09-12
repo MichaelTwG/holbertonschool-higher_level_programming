@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def add_tuple(a=(), b=()):
     if (len(a) < 2):
-        if (len(a) ==  1):
+        if (len(a) == 1):
             a = (a[0], 0)
         else:
             a += 0, 0
