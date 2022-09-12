@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    lst = []
+    cp_list = []
     for char in my_string:
-        lst.append(char)
-    for i in range(0, len(lst)):
-        if lst[i] == 'C' or lst[i] == 'c':
-            lst[i] == ''
-    return ''.join(lst)
+         cp_list.append(char)
+    for i in range(0, len(cp_list)):
+        if cp_list[i] == 'C' or cp_list[i] == 'c':
+            cp_list[i] = ''
+    return ''.join(cp_list)
