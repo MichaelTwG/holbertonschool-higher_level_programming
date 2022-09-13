@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+from distutils.log import set_threshold
+
+
 def common_elements(set_1, set_2):
     set_res = []
     for x in sorted(set_1):
