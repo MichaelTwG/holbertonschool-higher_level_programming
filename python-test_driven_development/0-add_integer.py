@@ -8,9 +8,8 @@ def add_integer(a, b=98):
     """add_integer add a and b"""
     if type(a) != float and type(a) != int:
         print("a must be an integer")
-        a = int(b)
+        a = int(a)
     if type(b) != float and type(b) != int:
         print("b must be an integer")
-        a = int(b)
-    else:
+        b = int(b)
         return (a+b)
