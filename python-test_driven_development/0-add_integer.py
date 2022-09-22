@@ -12,7 +12,7 @@ def add_integer(a, b=98):
         b = int(b)
 
     if type(a) is not int:
-        print("a must be an integer")
+        raise TypeError("a must be an integer")
     if type(a) is not int:
-        print("b must be an integer")
+        raise TypeError("b must be an integer")
     return (a+b)
