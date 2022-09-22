@@ -9,8 +9,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """ Instantiation Variables: Size """
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -49,7 +49,7 @@ class Square:
             for x in range(0, self.__position[1]):
                 print()
             for i in range(0, self.size):
-                if self.__position[1] < 0:
+                if not (self.__position[1] > 0):
                     for x in range(0, self.__position[0]):
                         print(" ", end="")
                 for i in range(0, self.size):
