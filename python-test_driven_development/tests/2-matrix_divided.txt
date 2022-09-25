@@ -22,7 +22,7 @@ ZeroDivisionError: division by zero
 
 >>> matrix_divided("STR", 3)
 Traceback (most recent call last):
-TypeError: matrix must be a matrix (list of list) of integers/floats
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> matrix_divided([[1,2],[1,2,3,4]], 3)
 Traceback (most recent call last):
