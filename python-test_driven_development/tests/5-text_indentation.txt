@@ -7,7 +7,7 @@ Using ``text_indentation(text)``
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 >>> text_indentation("Hello, my name is Michael. How are you?")
-Hello, my name is Michael
+Hello, my name is Michael.
 <BLANKLINE>
 How are you?
 <BLANKLINE>
