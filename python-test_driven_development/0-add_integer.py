@@ -1,23 +1,21 @@
 #!/usr/bin/python3
 """
-    this function add two ints or floats
+    Module add_integer
 """
 
 
 def add_integer(a, b=98):
-    """add_integer add a and b"""
-    if type(a) is float:
-        a = int(a)
-    if type(b) is float:
-        b = int(b)
+    """
+        add_integer: adds two integers, a and b
+        Return: the result or exception msg
+    """
 
-    if type(a) is not int:
+    if (a is None or (not isinstance(a, int) and not isinstance(a, float))):
         raise TypeError("a must be an integer")
-    elif type(b) is not int:
+    if (not isinstance(b, int) and not isinstance(b, float)):
         raise TypeError("b must be an integer")
-    else:
-        return (a+b)
 
+    return int(a) + int(b)
 
 if __name__ == "__main__":
     import doctest
