@@ -32,7 +32,7 @@ class Test_max_integer(unittest.TestCase):
         self.assertEqual(max_integer([3]), 3)
 
     def test_max_middle(self):
-        self.assertEqual(max_integer[1, 2, 5, 3, 4], 5)
+        self.assertEqual(max_integer([1, 2, 5, 3, 4]), 5)
 
 
 if __name__ == '__main__':
