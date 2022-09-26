@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Module 9-rectangle - Create a class called Square """
+"""Module Rectangle - Create a class called Square"""
 
 
 class Rectangle:
-    """ Rectangle class defined by width and height """
+    """Rectangle class defined by width and height"""
 
     print_symbol = "#"
     number_of_instances = 0
@@ -20,7 +20,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ width setter """
+        """width setter"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -34,7 +34,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """ height setter """
+        """height setter"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -43,18 +43,18 @@ class Rectangle:
             self.__height = value
 
     def area(self):
-        """ return the area of the rectangle """
+        """return the area of the rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
-        """ return the perimeter of the rectangle """
+        """return the perimeter of the rectangle"""
         perimeter = (self.__width * 2) + (self.__height * 2)
         if self.__width == 0 or self.__height == 0:
             perimeter = 0
         return perimeter
 
     def __str__(self):
-        """ retrieves an informal string representation of a rectangle """
+        """retrieves an informal string representation of a rectangle"""
         buf = ""
 
         if self.width == 0 or self.height == 0:
@@ -67,7 +67,7 @@ class Rectangle:
         return buf
 
     def __repr__(self):
-        """ Retrieves object representation of rectangle in string
+        """Retrieves object representation of rectangle in string
          recreating new instance by using eval()"""
         w = str(self.width)
         h = str(self.height)
@@ -80,7 +80,7 @@ class Rectangle:
         Retangle.number_of_instances -= 1
 
     def bigger_or_equal(rect_1, rect_2):
-        """ compare two rectangle areas and return the greather """
+        """compare two rectangle areas and return the greather"""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an istance of Rectangle")
         if not isinstance(rect_2, Rectangle):
