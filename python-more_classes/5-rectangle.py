@@ -78,21 +78,3 @@ class Rectangle:
         """Msg for delete a rectangle instance"""
         print("Bye rectangle...")
         Retangle.number_of_instances -= 1
-
-    def bigger_or_equal(rect_1, rect_2):
-        """ compare two rectangle areas and return the greather """
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an istance of Rectangle")
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an istance of Rectangle")
-
-        if rect_1.area >= rect_2.area:
-            return rect_1
-        else:
-            return rect_2
-
-        @classmethod
-        def square(cls, size=0):
-            """create a square using the rectangle class"""
-            square_1 = Rectangle(size, size)
-            return square_1
