@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 """
-    module Rectangle
+    Create a class called Square
 """
 
 
 class Rectangle:
-    """ rectangle class """
+    """
+        Atribute:
+            width (int): private width of the rectangle
+            height (int): private height of the rectangle
+    """
 
     print_symbol = "#"
     number_of_instances = 0
