@@ -5,14 +5,10 @@
 class Rectangle:
     """ Rectangle class defined by width and height """
 
-    print_symbol = "#"
-    number_of_instances = 0
-
     def __intit__(self, width=0, height=0):
         """Constructor method, initizlizes a rectangle class"""
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
