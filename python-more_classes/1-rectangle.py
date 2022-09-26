@@ -18,7 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
-         return self.__width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -40,4 +40,4 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         else:
-            self.__width = value
+            self.__heigth = value
