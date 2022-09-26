@@ -61,3 +61,6 @@ class Rectangle:
             if i < self.__height - 1:
                 string_return += "\n"
         return string_return
+
+    def __print__(self):
+        print(self.__str__)
