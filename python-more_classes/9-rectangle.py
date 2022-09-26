@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-""" Module 9-rectangle
-    Create a class called Square
+"""Module 9-rectangle
+
+Create a class called Square
 """
 
 
