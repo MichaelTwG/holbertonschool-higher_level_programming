@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-    This is a definition of a rectangle
+    module Rectangle
 """
 
 
 class Rectangle:
-    """ rectamngle class """
+    """ rectangle class """
 
     print_symbol = "#"
     number_of_instances = 0
