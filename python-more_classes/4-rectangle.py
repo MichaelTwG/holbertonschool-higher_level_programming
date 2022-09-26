@@ -64,9 +64,9 @@ class Rectangle:
 
     def __print__(self):
         print(self.__str__)
- 
+
     def __repr__(self):
         width = str(self.__width)
         heigth = str(self.__height)
-        
+
         return "Rectangle(" + width + ", " + heigth + ")"
