@@ -4,17 +4,17 @@
 >>> print(isinstance(bg, BaseGeometry))
 True
 
->>> bg.integer_validator("name", 12)
+>>> bg.integer_validator("str", 12)
 
->>> bg.integer_validator("name", "hola")
+>>> bg.integer_validator("str", "int")
 Traceback (most recent call last):
     ...
-TypeError: name must be an integer
+TypeError: str must be an integer
 
->>> bg.integer_validator("name", -2)
+>>> bg.integer_validator("str", -2)
 Traceback (most recent call last):
     ...
-ValueError: name must be greater than 0
+ValueError: str must be greater than 0
 >>> bg.integer_validator(None, 12)
 
 >>> bg.integer_validator("Name")
@@ -22,7 +22,7 @@ Traceback (most recent call last):
     ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
 
->>> bg.integer_validator("name", None)
+>>> bg.integer_validator("str", None)
 Traceback (most recent call last):
     ...
-TypeError: name must be an integer
+TypeError: str must be an integer
