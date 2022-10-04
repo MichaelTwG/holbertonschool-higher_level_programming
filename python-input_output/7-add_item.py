@@ -16,4 +16,5 @@ try:
 except:
     save_to_json_file([], "add_item.json")
 finally:
-    save_to_json_file(JSON_list, "add_item.json")
+    JSON_list2 += JSON_list
+    save_to_json_file(JSON_list2, "add_item.json")
