@@ -2,9 +2,6 @@
 """ Module Student"""
 
 
-from typing import Dict
-
-
 class Student:
     def __init__(self, first_name, last_name, age):
         """ constructor of the class"""
@@ -18,7 +15,7 @@ class Student:
         Mydict2 = dict()
         if attrs is None:
             return Mydict
-        
+
         for key, value in Mydict:
             for key_att in attrs:
                 if key is key_att:
