@@ -16,7 +16,7 @@ class Student:
         if attrs is None:
             return Mydict
 
-        for key, value in Mydict:
+        for key, value in Mydict.items():
             for key_att in attrs:
                 if key is key_att:
                     Mydict2[key] = value
