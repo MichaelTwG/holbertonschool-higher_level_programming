@@ -4,4 +4,4 @@
 
 def class_to_json(obj):
     """ Create a dictionary of a class"""
-    return obj.__dic__
+    return vars(obj)
