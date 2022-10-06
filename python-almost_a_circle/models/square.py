@@ -25,3 +25,16 @@ class Square(Rectangle):
         x = f"[Square] ({self.id}) "
         y = f"{self.x}/{self.y} - {self.size}"
         return x + y
+    
+    def update(self, *args, **kwargs):
+        """ update the class atributes using kwars """
+        if args and len(args) > 0:
+            if len(args) >= 2:
+                args_1 = (args[0], args[1])
+                args_2 = args_1 + args[1:]
+                args = args_2
+        else:
+            if 'size' in kwargs.keys():
+                kwargs['width'] = kwargs.pop('size')
+                kwargs['height'] = kwargs['width']
+        super(Square, self).update(*args, **kwargs)
