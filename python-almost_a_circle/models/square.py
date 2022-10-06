@@ -4,7 +4,9 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """ Define a Square"""
     def __init__(self, size, x=0, y=0, id=None):
+        """ constructor method, inherit from rectangle"""
         super().__init__(size, size, x, y, id)
         self.size = size
 
