@@ -21,3 +21,9 @@ class Student:
                 if key is key_att:
                     Mydict2[key] = value
         return Mydict2
+    
+    def reload_from_json(self, json):
+        """
+            replaces all atrributes of the Student instance
+            json: allwas be a dictionary
+        """
