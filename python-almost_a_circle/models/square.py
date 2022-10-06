@@ -13,7 +13,7 @@ class Square(Rectangle):
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if type(value) is not int:
@@ -25,5 +25,5 @@ class Square(Rectangle):
     def __str__(self):
         """ return the data of the square """
         x = f"[Square] ({self.id}) "
-        y = f"{self.x}/{self.y} - {self.__size}/{self.__size}"
+        y = f"{self.x}/{self.y} - {self.__size}"
         return x + y
