@@ -111,4 +111,5 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
 
     def to_dictionary(self):
+        """Convert to dictionary"""
         return vars(self)
