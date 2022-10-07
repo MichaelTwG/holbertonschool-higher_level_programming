@@ -109,3 +109,6 @@ class Rectangle(Base):
                 self.__x = kwargs["x"]
             if "y" in kwargs.keys():
                 self.__y = kwargs["y"]
+
+    def to_dictionary(self):
+        return vars(self)
