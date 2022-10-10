@@ -11,19 +11,21 @@ class Student:
 
     def to_json(self, attrs=None):
         """ return a dict of the class"""
-        Mydict = vars(self)
-        Mydict2 = dict()
-        if attrs is None:
-            return Mydict
+        MyDict = {}
 
-        for key, value in Mydict.items():
-            for key_att in attrs:
-                if key is key_att:
-                    Mydict2[key] = value
-        return Mydict2
+        if attrs is None:
+            return self.__dict__
+
+        for atr in attrs:
+                if atr in self.__dict__:
+                    MyDict[atr] = self.__dict__[atr]
+        return MyDict
     
     def reload_from_json(self, json):
         """
             replaces all atrributes of the Student instance
             json: allwas be a dictionary
         """
+        if json == {}:
+            return
+        self.__dict__ = json
