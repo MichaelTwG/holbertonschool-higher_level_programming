@@ -20,7 +20,7 @@ class Student:
                 if atr in self.__dict__:
                     MyDict[atr] = self.__dict__[atr]
         return MyDict
-    
+
     def reload_from_json(self, json):
         """
             replaces all atrributes of the Student instance
