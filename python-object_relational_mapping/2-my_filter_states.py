@@ -46,10 +46,11 @@ if __name__ == '__main__':
 
     DataBase_1_conection = DataBase_1.DBConection()
     cursor = DataBase_1.Cursor()
-    consult = "SELECT * from states WHERE name='{}'".format(conection_data[4])
+    consult = "SELECT * from states WHERE BINARY name='{}' ORDER BY id ASC".format(conection_data[4])
     cursor.execute(consult)
 
     states = cursor.fetchall()
 
     for state in states:
+
         print(state)
