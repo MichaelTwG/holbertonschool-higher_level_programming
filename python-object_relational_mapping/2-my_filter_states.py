@@ -46,10 +46,9 @@ if __name__ == '__main__':
 
     DataBase_1_conection = DataBase_1.DBConection()
     cursor = DataBase_1.Cursor()
-    cursor.execute("SELECT * from states")
+    cursor.execute("SELECT * from states WHERE name={}".format(conection_data[4]))
 
     states = cursor.fetchall()
 
     for state in states:
-        if state[1] == conection_data[4]:
-            print(state)
+        print(state)
