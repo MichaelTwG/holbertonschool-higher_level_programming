@@ -46,8 +46,9 @@ if __name__ == '__main__':
 
     DataBase_1_conection = DataBase_1.DBConection()
     cursor = DataBase_1.Cursor()
-    consult = "SELECT * from states WHERE BINARY name='{}' ORDER BY id ASC".format(conection_data[4])
-    cursor.execute(consult)
+    consult = "SELECT * from states "
+    consult_2 = "WHERE BINARY name='{}'".format(conection_data[4])
+    cursor.execute(consult + consult_2 + " ORDER BY id ASC")
 
     states = cursor.fetchall()
 
