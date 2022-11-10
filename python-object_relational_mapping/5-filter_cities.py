@@ -59,6 +59,7 @@ if __name__ == '__main__':
 
     for i in range(0, len(states)):
         if i == len(states) - 1:
-            print(states[i][0])
+            print(states[i][0], end="")
         else:
             print(states[i][0], end=", ")
+    print()
