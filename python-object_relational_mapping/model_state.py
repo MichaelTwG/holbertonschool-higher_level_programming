@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-''' State model '''
+'''
+Create a model state inheriths from base
+'''
 
 from sqlalchemy.ext.declarative import delcarative_base
 from sqlalchemy import Column, Integer, String
