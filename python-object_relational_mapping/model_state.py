@@ -1,4 +1,4 @@
-#!/usr/bin/pyhon3
+#!/usr/bin/python3
 """ Modulo state """
 
 from sqlalchemy.ext.declarative import delcarative_base
