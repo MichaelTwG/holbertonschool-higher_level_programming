@@ -1,18 +1,20 @@
 #!/usr/bin/python3
-'''
+"""
 Create a model state inheriths from base
-'''
+"""
+
 
 from sqlalchemy.ext.declarative import delcarative_base
 from sqlalchemy import Column, Integer, String
+
 
 Base = delcarative_base()
 
 
 class State(Base):
-    '''
-        SQL Model State with SQLAlchemy
-    '''
+    """
+    SQL Model State with SQLAlchemy
+    """
 
     __tablename__ = "states"
 
