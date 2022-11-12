@@ -1,20 +1,20 @@
 #!/usr/bin/python3
-""" 
-Model model_state.py
-This module contains
-a python object representation
-of a mysql table
-"""
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import delcarative_base
+'''
+Create a model state from task 6
+'''
 
-Base = delcarative_base()
+
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+
+
+Base = declarative_base()
 
 
 class State(Base):
-    """ Define a SQL model with SQLAlchemy """
-    __tablename__ = "states"
-    id = Column(Integer, primary_key=True, nullable=False,
-                unique=True, autoincrement=True
-                )
-    name = Column(String(128), nullable=False)
+    '''
+    Define a state class inherited from Base
+    '''
+    __tablename__ = 'states'
+    id = Column(Integer, primary_key=True, nullable=False)
+    name = Column(String(128), nullable=True)
