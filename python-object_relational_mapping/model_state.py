@@ -13,11 +13,13 @@ Base = declarative_base()
 
 class State(Base):
     '''
-    Define a class called state 
+    Define a class called state
     that inherits from Base
 
     This class represent a SQL table
     '''
     __tablename__ = 'states'
-    id = Column(Integer, primary_key=True, nullable=False)
-    name = Column(String(128), nullable=True)
+    id = Column(Integer, primary_key=True, nullable=False,
+                autoincrement=True, unique=True
+                )
+    name = Column(String(128), nullable=False)
