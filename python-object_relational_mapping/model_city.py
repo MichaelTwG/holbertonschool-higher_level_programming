@@ -6,6 +6,7 @@ Model state from task 6
 from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base
 
+
 class City(Base):
     '''
     Define a class called state

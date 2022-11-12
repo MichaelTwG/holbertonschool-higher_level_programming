@@ -4,7 +4,7 @@
 """
 from sys import argv
 from model_state import Base, State
-from model_city import City 
+from model_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -46,8 +46,10 @@ if __name__ == "__main__":
     BD_Conection.New_session()
 
     """ Consulta a Base de Datos """
-    query = BD_Conection.session.query(City,State).filter(State.id == City.state_id).all()
-    
+    query = BD_Conection.session.query(City, State).filter(
+            State.id == City.state_id
+            ).all()
+
     """ Mostrar en pantalla el resultado """
     for ci, st in query:
         print(f"{st.name}: ({ci.id}) {ci.name}")
