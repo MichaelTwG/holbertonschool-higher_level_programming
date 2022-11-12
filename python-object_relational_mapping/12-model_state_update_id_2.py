@@ -45,8 +45,8 @@ if __name__ == "__main__":
     BD_Conection.New_session()
 
     """ Consulta a Base de Datos """
-    query = BD_Conection.session.query(State).filter(State.id == 6)
-    query[0].name = "Oceano Pacifico"
+    query = BD_Conection.session.query(State).filter(State.id == 2)
+    query[0].name = "New Mexico"
 
     """ Update user """
     BD_Conection.session.add(query[0])
