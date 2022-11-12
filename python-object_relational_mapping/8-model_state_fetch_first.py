@@ -45,8 +45,10 @@ if __name__ == "__main__":
     BD_Conection.New_session()
 
     """ Consulta a Base de Datos """
-    query = BD_Conection.session.query(State).filter(State.id == 1)
+    query = BD_Conection.session.query(State).first()
 
     """ Mostrar en pantalla el resultado """
-
-    print("{}: {}".format(query[0].id, query[0].name))
+    if query is None:
+        print("Nothing")
+    else:
+        print("{}: {}".format(query.id, query.name))
