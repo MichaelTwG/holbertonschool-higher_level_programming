@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-Create a model state from task 6
+Model state from task 6
 '''
 
 
@@ -13,7 +13,10 @@ Base = declarative_base()
 
 class State(Base):
     '''
-    Define a state class inherited from Base
+    Define a class called state 
+    that inherits from Base
+
+    This class represent a SQL table
     '''
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False)
