@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-""" Model model_state.py """
-
-
+""" 
+Model model_state.py
+This module contains
+a python object representation
+of a mysql table
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import delcarative_base
 
