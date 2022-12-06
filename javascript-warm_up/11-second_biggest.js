@@ -1,7 +1,9 @@
 #!/usr/bin/node
 const args = process.argv;
 const numbers = [];
-if (args.length < 3) {
+if (args[2] === '1' || args[2] === NaN) {
+  console.log(1)
+} else if (args.length < 3) {
   console.log('1');
 } else {
   for (let i = 2; i < args.length; i += 1) {
