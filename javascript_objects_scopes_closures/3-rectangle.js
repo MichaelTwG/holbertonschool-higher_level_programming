@@ -8,20 +8,18 @@ class Rectangle {
     }
   }
 
-  print() {
-
-    let out_str = '';
+  print () {
+    let outStr = '';
 
     for (let i = 0; i < this.height; i += 1) {
-
       for (let j = 0; j < this.width; j += 1) {
-        out_str += 'X';
+        outStr += 'X';
       }
       if (i < this.height - 1) {
-        out_str += '\n';
+        outStr += '\n';
       }
     }
-    console.log(out_str);
+    console.log(outStr);
   }
 }
 
