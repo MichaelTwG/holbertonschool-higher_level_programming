@@ -11,8 +11,8 @@ class Square extends (sQ) {
 
     for (let i = 0; i < this.height; i += 1) {
       for (let j = 0; j < this.width; j += 1) {
-        if (c == 'C') {
-          outStr += 'C';
+        if (c) {
+          outStr += c;
         } else {
           outStr += 'X';
         }
