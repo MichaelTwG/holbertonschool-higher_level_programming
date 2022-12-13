@@ -15,11 +15,14 @@ request(options, (err, response, body) => {
     console.log(err);
   } else {
     const data = JSON.parse(body).results;
-    const char = 'https://swapi-api.hbtn.io/api/people/18/';
     let count = 0;
+
     for (const res of data) {
-      if (res.characters.includes(char)) {
-        count += 1;
+      for (const c of res.characters) {
+        const id = c.split('/')[5];
+        if (id === '18') {
+          count += 1;
+        }
       }
     }
     console.log(count);
